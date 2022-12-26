@@ -11,10 +11,11 @@ const shell = require('gulp-shell');
 task("dev:serve", () => {
     server.init({
         files: [
-            "dist/**/*"
+            "dist/**/*",
+            "assets/**/*"
         ],
         watchEvents: ["add", "change", "addDir"],
-        server: ["public", "dist"],
+        server: ["assets", "dist"],
         port: 8000,
         browser: "google chrome"
     })
