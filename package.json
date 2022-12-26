@@ -1,0 +1,40 @@
+{
+  "name": "@cymony/cryptomonyjs-opaque",
+  "version": "1.0.0",
+  "publishConfig": {
+    "access": "public"
+  },
+  "description": "OPAQUE protocol implementation based on https://github.com/cymony/cryptomony",
+  "license": "MIT",
+  "repository": {
+    "url": "https://github.com/cymony/cryptomonyjs-opaque"
+  },
+  "author": "Raşit AYDIN <justmumu@protonmail.com>",
+  "homepage": "https://github.com/cymony/cryptomonyjs-opaque#readme",
+  "bugs": "https://github.com/cymony/cryptomonyjs-opaque/issues",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "npx gulp dev",
+    "build": "npx gulp build",
+    "test": "npx jest"
+  },
+  "keywords": [],
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^24.0.0",
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "@rollup/plugin-terser": "^0.2.1",
+    "@rollup/plugin-typescript": "^10.0.1",
+    "@types/jest": "^29.2.4",
+    "browser-sync": "^2.27.11",
+    "gulp": "^4.0.2",
+    "gulp-shell": "^0.8.0",
+    "jest": "^29.3.1",
+    "pako": "^2.1.0",
+    "rimraf": "^3.0.2",
+    "rollup": "^3.8.1",
+    "rollup-plugin-clear": "^2.0.7",
+    "rollup-plugin-gzip": "^3.1.0",
+    "tslib": "^2.4.1",
+    "typescript": "^4.9.4"
+  }
+}
