@@ -4,6 +4,8 @@ filippo.io/nistec v0.0.0-20220825075812-a82cab4ea6f0 h1:infQBtlEPAdRCqMIoddLS8K2
 filippo.io/nistec v0.0.0-20220825075812-a82cab4ea6f0/go.mod h1:84fxC9mi+MhC2AERXI4LSa8cmSVOzrFikg6hZ4IfCyw=
 github.com/cymony/cryptomony v0.0.1 h1:P6PFK+ADh6kklamg6/FA8NBrV6RBPJ3yWxYwxZkrwNs=
 github.com/cymony/cryptomony v0.0.1/go.mod h1:blt61iHPGDv7QVrMyCBpkKWGeKPzzBYSinY/4O/QqHQ=
+github.com/cymony/cryptomony v0.0.2 h1:jqXnyLgKJuM17xwmsMc87V5YsrfAVGql08JjB14z1zU=
+github.com/cymony/cryptomony v0.0.2/go.mod h1:blt61iHPGDv7QVrMyCBpkKWGeKPzzBYSinY/4O/QqHQ=
 golang.org/x/crypto v0.0.0-20220829220503-c86fa9a7ed90 h1:Y/gsMcFOcR+6S6f3YeMKl5g+dZMEWqcz5Czj/GWYbkM=
 golang.org/x/crypto v0.0.0-20220829220503-c86fa9a7ed90/go.mod h1:IxCIyHEi3zRg3s0A5j5BB6A9Jmi73HwBIUl50j+osU4=
 golang.org/x/sys v0.2.0 h1:ljd4t30dBnAvMZaQCevtY0xLLD0A+bRZXbgLMLU1F/A=
