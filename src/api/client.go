@@ -133,7 +133,6 @@ func (c *client) IsInitialized() bool {
 // InitializeClient wasm wrapper for opaque.NewClient
 // Takes two argument, both are string, returns nothing. But resolve promise if successful.
 // Prototype Go: InitializeClient(suiteName string, serverID string)
-// Prototype JS: initClient(suiteName: string, serverID: string)
 func (c *client) InitializeClient(suiteName string, serverID string) error {
 	cConf := &opaque.ClientConfiguration{}
 

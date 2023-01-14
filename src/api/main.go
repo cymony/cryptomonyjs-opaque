@@ -18,14 +18,13 @@ func main() {
 	done := make(chan bool)
 
 	clMan := newClientManager()
-	// cl := newClient()
-	// sv := newServer()
+	svMan := newServerManager()
 
 	js.Global().Set(rootEl, make(map[string]interface{}))
 	rootModule := js.Global().Get(rootEl)
 
 	clMan.exposeToJS(rootModule)
-	// sv.exposeServer(rootModule)
+	svMan.exposeServer(rootModule)
 
 	<-done
 }

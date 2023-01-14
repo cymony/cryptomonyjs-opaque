@@ -35,14 +35,11 @@ func (cm *clientManager) exposeToJS(rootModule js.Value) {
 	clientModule.Set("loginFinish", js.FuncOf(cm.LoginFinish))
 }
 
-// NewClient creates new emptys client instance with identifier. It returns the identifier.
+// NewClient creates new empty client instance with identifier. It returns the identifier.
 func (cm *clientManager) NewClient(this js.Value, inputs []js.Value) any {
-	runner := func(resolve js.Value, reject js.Value) {
-		clid := cm.GenerateRandomID()
-		cm.clients[clid] = newClient()
-		resolve.Invoke(clid)
-	}
-	return promiser(runner)
+	clid := cm.GenerateRandomID()
+	cm.clients[clid] = newClient()
+	return clid
 }
 
 // InitClient initializes the already existing client instance with configuration.
@@ -68,8 +65,7 @@ func (cm *clientManager) InitClient(this js.Value, inputs []js.Value) any {
 			return
 		}
 
-		err = cl.InitializeClient(chosenSuiteName.String(), chosenServerID.String())
-		if err != nil {
+		if err := cl.InitializeClient(chosenSuiteName.String(), chosenServerID.String()); err != nil {
 			rejectErr(reject, err)
 			return
 		}
