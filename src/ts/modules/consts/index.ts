@@ -4,10 +4,13 @@ const serverRootEl: string = "server";
 
 export type Suite = 'Ristretto255Suite' | 'P256Suite'
 
+export const isNode = typeof process !== "undefined" && process.versions != null &&
+    process.versions.node != null;
+
 export const getWasmClient = () => {
-    return window[wasmRootEl][clientRootEl]
+    return globalThis[wasmRootEl][clientRootEl]
 }
 
 export const getWasmServer = () => {
-    return window[wasmRootEl][serverRootEl]
+    return globalThis[wasmRootEl][serverRootEl]
 }

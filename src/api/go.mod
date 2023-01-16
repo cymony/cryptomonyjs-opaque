@@ -2,7 +2,7 @@ module cryptomonyjs-opaque
 
 go 1.19
 
-require github.com/cymony/cryptomony v0.0.1
+require github.com/cymony/cryptomony v0.0.2
 
 require (
 	filippo.io/edwards25519 v1.0.0 // indirect
