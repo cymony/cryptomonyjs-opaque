@@ -29,8 +29,8 @@
     "default": "./dist/cjs/cryptomonyjs-opaque.js"
   },
   "scripts": {
-    "dev": "npx gulp dev",
-    "build": "npx gulp build"
+    "dev": "gulp dev",
+    "build": "gulp build"
   },
   "keywords": [
     "cryptomony",
