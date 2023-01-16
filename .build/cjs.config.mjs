@@ -16,6 +16,7 @@ export default {
         {
             format: 'cjs',
             file: pkg.main,
+            sourcemap: isDev(),
             intro: "require('./wasm_exec_node.js');"
         }
     ],

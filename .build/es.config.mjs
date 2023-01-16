@@ -46,7 +46,7 @@ const esConf = [
             commonjs(),
             typescript({
                 tsconfig: getTsConfigPath(),
-                sourceMap: isDev(),
+                sourceMap: isDev()
             }),
             !isDev() && terser(
                 {
