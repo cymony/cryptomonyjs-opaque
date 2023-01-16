@@ -1,6 +1,6 @@
 const gulp = require('gulp');
 const rimraf = require('rimraf');
-const { src, series, dest, watch, task, parallel } = gulp;
+const { series, watch, task, parallel } = gulp;
 
 const browsersync = require('browser-sync');
 const server = browsersync.create();
